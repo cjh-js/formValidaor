@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(249, 250, 251);
+}
+
+#wrap {
+  width: 400px;
+  height: 550px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formjs {
+  margin-top: -18px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formjs div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  height: 93px;
+}
+
+label {
+  color: rgba(0, 0, 0, 0.35);
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.formjs div input {
+  width: 350px;
+  height: 40px;
+  padding: 0 0 0 10px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  border: 3px solid rgba(0, 0, 0, 0.35);
+}
+
+.formjs div input::placeholder {
+  color: #cccccc;
+}
+
+.formjs div input:focus {
+  outline: 0;
+  border-color: black;
+}
+
+.formjs input[type="submit"] {
+  height: 40px;
+  background-color: rgb(52, 152, 219);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-top: -10px;
+}
+
+div small {
+  color: red;
+}
+
+div.success input {
+  border-color: blue;
+}
+
+div.error input {
+  border: 3px solid red;
+}
+
+div.success small {
+  visibility: hidden;
+}
+div.error small {
+  visibility: visible;
+}
