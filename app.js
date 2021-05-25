@@ -57,7 +57,7 @@ function checkMail(input){
 function checkPW(pw1, pw2){
     if(pw1.value !== pw2.value){
         showErr(pw2, `Password does not match`);
-    } else {
+    } else if(pw2.value.trim() !== '' && pw1.value === pw2.value){
         showSuc(pw2);
     }
 }
